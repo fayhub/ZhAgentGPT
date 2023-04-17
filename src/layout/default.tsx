@@ -11,11 +11,11 @@ interface LayoutProps {
 
 const DefaultLayout = (props: LayoutProps) => {
   const description =
-    "Assemble, configure, and deploy autonomous AI Agents in your browser.";
+    "在浏览器中组装、配置和部署自主人工智能代理。";
   return (
     <div className="flex flex-col bg-gradient-to-b from-[#2B2B2B] to-[#1F1F1F]">
       <Head>
-        <title>AgentGPT</title>
+        <title>Chinese-AgentGPT</title>
         <meta name="description" content={description} />
         <meta name="twitter:site" content="@AgentGPT" />
         <meta name="twitter:card" content="summary_large_image" />
@@ -33,7 +33,7 @@ const DefaultLayout = (props: LayoutProps) => {
         />
         <meta
           property="og:description"
-          content="Assemble, configure, and deploy autonomous AI Agents in your browser."
+          content="在浏览器中组装、配置和部署自主人工智能代理。"
         />
         <meta property="og:url" content="https://agentgpt.reworkd.ai/" />
         <meta

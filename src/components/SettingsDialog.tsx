@@ -108,15 +108,15 @@ export default function SettingsDialog({
 
   return (
     <Dialog
-      header="Settings ⚙"
+      header="设置 ⚙"
       isShown={show}
       close={handleClose}
-      footerButton={<Button onClick={handleSave}>Save</Button>}
+      footerButton={<Button onClick={handleSave}>保存</Button>}
     >
       <p>
-        Here you can add your OpenAI API key. This will require you to pay for
-        your own OpenAI usage but give you greater access to AgentGPT! You can
-        additionally select any model OpenAI offers.
+      在这里，您可以添加您的OpenAI API密钥。这将需要您支付
+您自己的OpenAI使用，但为您提供更大的AgentGPT访问权限！你可以
+另外选择OpenAI提供的任何模型。
       </p>
       <br />
       <p
@@ -129,15 +129,14 @@ export default function SettingsDialog({
         <FaExclamationCircle className="inline-block" />
         &nbsp;
         <b>
-          To use the GPT-4 model, you need to also provide the API key for
-          GPT-4. You can request for it&nbsp;
+          如果要使用GPT-4的模型，你需要提供支持GPT-4的账号下的秘钥&nbsp;
           <a
             href="https://openai.com/waitlist/gpt-4-api"
             className="text-blue-500"
           >
-            here
+            点此申请
           </a>
-          . (ChatGPT Plus subscription will not work)
+          . (否则将不起作用)
         </b>
       </p>
       <br />
@@ -146,7 +145,7 @@ export default function SettingsDialog({
           left={
             <>
               <FaMicrochip />
-              <span className="ml-2">Model:</span>
+              <span className="ml-2">模型:</span>
             </>
           }
           type="combobox"
@@ -160,7 +159,7 @@ export default function SettingsDialog({
           left={
             <>
               <FaKey />
-              <span className="ml-2">Key: </span>
+              <span className="ml-2">秘钥: </span>
             </>
           }
           placeholder={"sk-..."}
@@ -170,19 +169,18 @@ export default function SettingsDialog({
         <br className="md:inline" />
         <Accordion
           child={advancedSettings}
-          name="Advanced Settings"
+          name="高级设置"
         ></Accordion>
         <br />
         <strong className="mt-10">
-          NOTE: To get a key, sign up for an OpenAI account and visit the
-          following{" "}
+        注意：要获得密钥，请注册OpenAI帐户并访问下列的{" "}
           <a
             href="https://platform.openai.com/account/api-keys"
             className="text-blue-500"
           >
-            link.
+            链接.
           </a>{" "}
-          This key is only used in the current browser session
+          此密钥仅在当前浏览器会话中使用
         </strong>
       </div>
     </Dialog>

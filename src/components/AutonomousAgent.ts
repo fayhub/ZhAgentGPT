@@ -238,7 +238,7 @@ class AutonomousAgent {
   sendExecutionMessage(task: string, execution: string) {
     this.sendMessage({
       type: "action",
-      info: `Executing "${task}"`,
+      info: `执行中 "${task}"`,
       value: execution,
     });
   }

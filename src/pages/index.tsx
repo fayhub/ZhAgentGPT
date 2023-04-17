@@ -156,14 +156,19 @@ const Home: NextPage = () => {
                 <span className="text-4xl font-bold text-white xs:text-5xl sm:text-6xl">
                   GPT
                 </span>
-                <PopIn delay={0.5} className="sm:absolute sm:right-0 sm:top-2">
-                  <Badge>Beta 🚀</Badge>
-                </PopIn>
+                <span className="text-4xl font-bold text-white xs:text-5xl sm:text-2xl">
+                  -汉化版
+                </span>
+                <span className="text-4xl font-bold text-white sm:px-4 md:px-10 xs:text-5xl sm:text-2xl">
+                  <PopIn delay={0.5} className="sm:left-10 sm:top-2">
+                    <Badge>Beta 🚀</Badge>
+                  </PopIn>
+                </span>
+                
               </div>
               <div className="mt-1 text-center font-mono text-[0.7em] font-bold text-white">
                 <p>
-                  Assemble, configure, and deploy autonomous AI Agents in your
-                  browser.
+                在浏览器中组装、配置和部署自主人工智能代理。
                 </p>
               </div>
             </div>
@@ -187,7 +192,7 @@ const Home: NextPage = () => {
                   left={
                     <>
                       <FaRobot />
-                      <span className="ml-2">Name:</span>
+                      <span className="ml-2">标题:</span>
                     </>
                   }
                   value={name}
@@ -201,13 +206,13 @@ const Home: NextPage = () => {
                   left={
                     <>
                       <FaStar />
-                      <span className="ml-2">Goal:</span>
+                      <span className="ml-2">目标:</span>
                     </>
                   }
                   disabled={agent != null}
                   value={goalInput}
                   onChange={(e) => setGoalInput(e.target.value)}
-                  placeholder="Make the world a better place."
+                  placeholder="让世界变得更美好。"
                 />
               </Expand>
             </div>
@@ -219,7 +224,7 @@ const Home: NextPage = () => {
                 className="sm:mt-10"
               >
                 {agent == null ? (
-                  "Deploy Agent"
+                  "执行 Agent"
                 ) : (
                   <>
                     <VscLoading className="animate-spin" size={20} />
@@ -240,7 +245,7 @@ const Home: NextPage = () => {
                     <span className="ml-2">Stopping</span>
                   </>
                 ) : (
-                  "Stop agent"
+                  "停止 agent"
                 )}
               </Button>
             </Expand>

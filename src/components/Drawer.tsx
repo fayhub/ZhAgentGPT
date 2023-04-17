@@ -81,7 +81,7 @@ const Drawer = ({
               className="flex-grow"
               icon={<BiPlus />}
               border
-              text="New Agent"
+              text="新窗口"
               onClick={() => location.reload()}
             />
             <button
@@ -104,8 +104,6 @@ const Drawer = ({
 
             {userAgents.length === 0 && (
               <div>
-                Click the above button to restart. In the future, this will be a
-                list of your deployed agents!
               </div>
             )}
           </ul>
@@ -131,10 +129,10 @@ const Drawer = ({
           )}
           <DrawerItem
             icon={<FaQuestionCircle />}
-            text="Help"
+            text="帮助"
             onClick={showHelp}
           />
-          <DrawerItem icon={<FaCog />} text="Settings" onClick={showSettings} />
+          <DrawerItem icon={<FaCog />} text="设置" onClick={showSettings} />
           <hr className="my-2 border-white/20" />
           <div className="flex flex-row items-center">
             <DrawerItem

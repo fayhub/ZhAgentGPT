@@ -13,21 +13,21 @@ export default function HelpDialog({
     <Dialog header="Welcome to AgentGPT 🤖" isShown={show} close={close}>
       <div className="text-md relative flex-auto p-2 leading-relaxed">
         <p>
-          <strong>AgentGPT</strong> allows you to configure and deploy
-          Autonomous AI agents. Name your custom AI and have it embark on any
-          goal imaginable. It will attempt to reach the goal by thinking of
-          tasks to do, executing them, and learning from the results 🚀
+          <strong>AgentGPT</strong> 允许您配置和部署
+自主人工智能代理。命名您的自定义AI并让它开始任何
+可以想象的目标。它将试图通过思考来达到目标
+要做的任务，执行它们，并从结果中学习 🚀
         </p>
         <div>
           <br />
-          This platform is currently in beta, we are currently working on:
+          该平台目前处于测试阶段，我们目前正在开发：
           <ul className="ml-5 list-inside list-disc">
-            <li>Long term memory 🧠</li>
-            <li>Web browsing 🌐</li>
-            <li>Interaction with websites and people 👨‍👩‍👦</li>
+            <li>长期记忆 🧠</li>
+            <li>网页浏览 🌐</li>
+            <li>与网站和人员的互动 👨‍👩‍👦</li>
           </ul>
           <br />
-          <p className="mt-2">Follow the journey below:</p>
+          <p className="mt-2">关注动态：</p>
         </div>
         <div className="mt-4 flex w-full items-center justify-center gap-5">
           <div
