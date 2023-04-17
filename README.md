@@ -1,157 +1,24 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/reworkd/AgentGPT/main/public/banner.png?token=GHSAT0AAAAAAB7JND3U3VGGF3UYYHGYO4RAZBSDJAQ" height="300"/>
-</p>
-<p align="center">
-  <em>🤖 Assemble, configure, and deploy autonomous AI Agents in your browser. 🤖 </em>
-</p>
-<p align="center">
-    <img alt="Node version" src="https://img.shields.io/static/v1?label=node&message=%20%3E=16.0.0&logo=node.js&color=2334D058" />
-      <a href="https://github.com/reworkd/AgentGPT/blob/master/README.md"><img src="https://img.shields.io/badge/lang-English-blue.svg" alt="English"></a>
-  <a href="https://github.com/reworkd/AgentGPT/blob/master/docs/README.zh-HANS.md"><img src="https://img.shields.io/badge/lang-简体中文-red.svg" alt="简体中文"></a>
-</p>
+## 🚀 汉化修改内容
 
-<p align="center">
-<a href="https://agentgpt.reworkd.ai">🔗 Short link</a>
-<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-<a href="#-getting-started">🤝 Contribute</a>
-<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-<a href="https://twitter.com/asimdotshrestha/status/1644883727707959296">🐦 Twitter</a>
-<span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
-<a href="https://discord.gg/3PccggEG">📢 Discord</a>
-</p>
+1. 简单汉化了下，核心是在预添加的前置提示词，指定回复的答案要和提问的语言类型一致，就可以实现用户用什么语言提问，回答就用什么语言回答。
+2. 网站内容简单翻译了下。
+3. 生成 PDF 的时候会有乱码，换了一个中文的字体库。
+4. 已经部署在 vercel 上，部署的时候注意 next.config.mjs 下的这行代码可以注释掉：
 
----
+```bash
+//!process.env.SKIP_ENV_VALIDATION && (await import("./src/env/server.mjs"));
+```
 
-<h2 align="center">
-💝 Support the Advancement of AgentGPT!! 💝
-</h2>
+做了个 demo，大家可以看看：
 
-<p align="center">
-Join us in fueling the development of AgentGPT, an open-source project pushing the boundaries of AI autonomy! We're facing challenges in covering the operational costs 💸, including in-house API and other infrastructure expenses, which is projected to grow to around $150 USD per day 💳🤕 Your sponsorship would drive progress by helping us scale up resources, enhance features and functionality, and continue to iterate on this exciting project! 🚀
-</p>
-
-<p align="center">
-By sponsoring this free, open-source project, you not only have the opportunity to have your avatar/logo featured below, but also get the exclusive chance to chat with the founders!🗣️ 
-</p>
-
-<p align="center">
-<a href="https://github.com/sponsors/reworkd-admin">👉 Click here</a> to support the project 
-</p>
-
-<h3 align="center">
-🙌🏻 Our Sponsers 🙌🏻
-</h3>
-
-<div align="center" dir="auto">
-  <a href="https://github.com/Faitltd" style="display: inline-block; margin-right: 20px;">
-    <img src="https://github.com/Faitltd.png" width="50px" alt="faithltd" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/arthurbnhm" style="display: inline-block;">
-    <img src="https://github.com/arthurbnhm.png" width="50px" alt="arthurbnhm" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/durairajasivam" style="display: inline-block;">
-    <img src="https://github.com/durairajasivam.png" width="50px" alt="durairajasivam" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/zoelidity" style="display: inline-block;">
-    <img src="https://github.com/zoelidity.png" width="50px" alt="zoelidity" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/jd3655" style="display: inline-block;">
-    <img src="https://github.com/jd3655.png" width="50px" alt="jd3655" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/busseyl" style="display: inline-block;">
-    <img src="https://github.com/busseyl.png" width="50px" alt="busseyl" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/lisa-ee" style="display: inline-block;">
-    <img src="https://github.com/lisa-ee.png" width="50px" alt="lisa-ee" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/VulcanT" style="display: inline-block;">
-    <img src="https://github.com/VulcanT.png" width="50px" alt="VulcanT" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/kman62" style="display: inline-block;">
-    <img src="https://github.com/kman62.png" width="50px" alt="kman62" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/Haithamhaj" style="display: inline-block;">
-    <img src="https://github.com/Haithamhaj.png" width="50px" alt="Haithamhaj" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/SwftCoins" style="display: inline-block;">
-    <img src="https://github.com/SwftCoins.png" width="50px" alt="SwftCoins" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/ChevalierzA" style="display: inline-block;">
-    <img src="https://github.com/ChevalierzA.png" width="50px" alt="ChevalierzA" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/research-developer" style="display: inline-block;">
-    <img src="https://github.com/research-developer.png" width="50px" alt="research-developer" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/FelixAI2023" style="display: inline-block;">
-    <img src="https://github.com/FelixAI2023.png" width="50px" alt="FelixAI2023" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/Mitchell-Coder-New" style="display: inline-block;">
-    <img src="https://github.com/Mitchell-Coder-New.png" width="50px" alt="Mitchell-Coder-New" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/mrayonnaise" style="display: inline-block;">
-    <img src="https://github.com/mrayonnaise.png" width="50px" alt="mrayonnaise" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/floriank" style="display: inline-block;">
-    <img src="https://github.com/floriank.png" width="50px" alt="floriank" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/localecho" style="display: inline-block;">
-    <img src="https://github.com/localecho.png" width="50px" alt="localecho" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/hnishi3" style="display: inline-block;">
-    <img src="https://github.com/hnishi3.png" width="50px" alt="hnishi3" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/fireheat135" style="display: inline-block;">
-    <img src="https://github.com/fireheat135.png" width="50px" alt="fireheat135" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/DuanChaori" style="display: inline-block;">
-    <img src="https://github.com/DuanChaori.png" width="50px" alt="DuanChaori" style="max-width:100%;">
-  </a>
-  <a href="https://github.com/jukwaphil1" style="display: inline-block;">
-    <img src="https://github.com/jukwaphil1.png" width="50px" alt="jukwaphil1" style="max-width:100%;">
-  </a>
-   <a href="https://github.com/sorrynothing" style="display: inline-block;">
-    <img src="https://github.com/sorrynothing.png" width="50px" alt="sorrynothing" style="max-width:100%;">
-  </a>
-  
-</div>
-
----
-
-AgentGPT allows you to configure and deploy Autonomous AI agents.
-Name your own custom AI and have it embark on any goal imaginable.
-It will attempt to reach the goal by thinking of tasks to do, executing them, and learning from the results 🚀.
-
-## 🎉 Roadmap
-
-This platform is currently in beta, we are currently working on:
-
-- Long term memory via a vector DB 🧠
-- Web browsing capabilities via LangChain 🌐
-- Interaction with websites and people 👨‍👩‍👦
-- Writing capabilities via a document API 📄
-- Saving agent runs 💾
-- Users and authentication 🔐
-- Stripe integration for a lower limit paid version (So we can stop worrying about infra costs) 💵
-
-More Coming soon...
-
-## 🚀 Tech Stack
-
-- ✅ **Bootstrapping**: [create-t3-app](https://create.t3.gg).
-- ✅ **Framework**: [Nextjs 13 + Typescript](https://nextjs.org/).
-- ✅ **Auth**: [Next-Auth.js](https://next-auth.js.org)
-- ✅ **ORM**: [Prisma](https://prisma.io).
-- ✅ **Database**: [Supabase](https://supabase.com/).
-- ✅ **Styling**: [TailwindCSS + HeadlessUI](https://tailwindcss.com).
-- ✅ **Typescript Schema Validation**: [Zod](https://github.com/colinhacks/zod).
-- ✅ **End-to-end typesafe API**: [tRPC](https://trpc.io/).
+- [Click here](https://agentgpt.jinchun.vip/).
 
 ## 👨‍🚀 Getting Started
 
 ### 🐳 Docker Setup
 
-The easiest way to run AgentGPT locally is by using docker.
-A convenient setup script is provided to help you get started.
+Docker 是在本地运行 AgentGPT 最简单的方法。
+以下是一个方便的设置脚本。
 
 ```bash
 ./setup.sh --docker
@@ -159,8 +26,7 @@ A convenient setup script is provided to help you get started.
 
 ### 👷 Local Development Setup
 
-If you wish to develop AgentGPT locally, the easiest way is to
-use the provided setup script.
+如果你想在本地开发 AgentGPT，最简单的方法是使用以下的设置脚本。
 
 ```bash
 ./setup.sh --local
@@ -168,74 +34,74 @@ use the provided setup script.
 
 ### 🛠️ Manual Setup
 
-> 🚧 You will need [Nodejs +18 (LTS recommended)](https://nodejs.org/en/) installed.
+> 🚧 你需要安装 [Nodejs +18 (LTS recommended)](https://nodejs.org/en/)。
 
-1. Fork this project:
+1. 创建存储库分支:
 
 - [Click here](https://github.com/reworkd/AgentGPT/fork).
 
-2. Clone the repository:
+2. 克隆存储库:
 
 ```bash
 git clone git@github.com:YOU_USER/AgentGPT.git
 ```
 
-3. Install dependencies:
+3. 安装依赖项:
 
 ```bash
 cd AgentGPT
 npm install
 ```
 
-4. Create a **.env** file with the following content:
+4. 使用以下内容创建.env:
 
-> 🚧 The environment variables must match the following [schema](https://github.com/reworkd/AgentGPT/blob/main/src/env/schema.mjs).
+> 🚧 环境变量必须符合以下 [架构](https://github.com/reworkd/AgentGPT/blob/main/src/env/schema.mjs).
 
 ```bash
-# Deployment Environment:
+# 部署环境:
 NODE_ENV=development
 
-# Next Auth config:
-# Generate a secret with `openssl rand -base64 32`
+# Next Auth 配置:
+# 用`openssl rand -base64 32`生成NEXTAUTH_SECRET的秘密
 NEXTAUTH_SECRET=changeme
 NEXTAUTH_URL=http://localhost:3000
 DATABASE_URL=file:./db.sqlite
 
-# Your open api key
+# 你的open api密钥
 OPENAI_API_KEY=changeme
 ```
 
-5. Modify prisma schema to use sqlite:
+5. 使用 sqlite 修改 prisma 架构:
 
 ```bash
 ./prisma/useSqlite.sh
 ```
 
-**Note:** This only needs to be done if you wish to use sqlite.
+**注意:** 使用 sqlite 时才需要执行此步骤。
 
-6. Ready 🥳, now run:
+6. 准备就绪 🥳，现在可以运行了:
 
 ```bash
-# Create database migrations
+# 创建数据库迁移
 npx prisma db push
 npm run dev
 ```
 
 ### 🚀 GitHub Codespaces
 
-Set up AgentGPT in the cloud immediately by using [GitHub Codespaces](https://github.com/features/codespaces).
+使用[GitHub Codespaces](https://github.com/features/codespaces)在云端设置 AgentGPT。
 
-1. From the GitHub repo, click the green "Code" button and select "Codespaces".
-2. Create a new Codespace or select a previous one you've already created.
+1. 从 GitHub 存储库中，单击绿色的 "Code" 按钮并选择 "Codespaces"。
+2. 创建一个新的 Codespace 或选择之前已创建的 Codespace。
 3. Codespaces opens in a separate tab in your browser.
-4. In terminal, run `bash ./setup.sh --local`
-5. When prompted in terminal, add your OpenAI API key.
-6. Click "Open in browser" when the build process completes.
+4. 在终端中运行 `bash ./setup.sh --local`。
+5. 当终端中提示时，添加你的 OpenAI API 密钥。
+6. 当构建过程完成后，单击 "Open in browser"。
 
-- To shut AgentGPT down, enter Ctrl+C in Terminal.
-- To restart AgentGPT, run `npm run dev` in Terminal.
+- 如果要关闭 AgentGPT，请在终端中输入 Ctrl+C
+- 如果要重启 AgentGPT, 请在终端中运行 `npm run dev`。
 
-Run the project 🥳
+运行该项目 🥳
 
 ```
 npm run dev
