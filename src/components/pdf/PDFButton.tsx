@@ -7,7 +7,7 @@ import MyDocument from "./MyDocument";
 
 const PDFButton = ({ messages }: { messages: Message[] }) => {
   const content = getContent(messages);
-
+  console.log(`content: ${content}`);
   const downloadPDF = async () => {
     const blob = await pdf(<MyDocument content={content} />).toBlob();
     const url = URL.createObjectURL(blob);
